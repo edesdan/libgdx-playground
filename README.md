@@ -1,8 +1,10 @@
 # libgdx-playground
-The project is intended to be a sort of template to start a new game with libGDX.
-It's also useful to all people that wants to start learning libgdx by doing some experiment. 
-The project has been created using [ gdx-setup.jar UI ] (https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle).
-You can download/clone the project and you are ready to import it into your IDE ([Eclipse, Intellij IDEA, NetBeans, Commandline](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)) :
+libgdx-playground allows you getting started with [ libGDX framework ] (https://github.com/libgdx/libgdx).
+It can be used also as template to start developing a game.
+
+The base project structure has been created with [ gdx-setup.jar UI ] (https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle).
+
+After download/clone you can import it into your IDE ([Eclipse, Intellij IDEA, NetBeans, Commandline](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)) :
 
  - To import in Eclipse: File -> Import -> Gradle -> Gradle Project
  - To import to Intellij IDEA: File -> Open -> build.gradle
@@ -34,6 +36,9 @@ Structure of the **core** project:
 
 ```
 
+PlaygroundMain.java is the main class and it used as entry point for all projects (android,iOS,html,Desktop). 
+PlagroundScreen.java is the main screen and illustrate the use of the AbstractGameScreen class.
+LibgdxLogo.java illustrate the use of AbstractGameObject class. 
 
 
 
