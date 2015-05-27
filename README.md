@@ -8,4 +8,31 @@ You can download/clone the project and you are ready to import it into your IDE 
  - To import to NetBeans: File -> Open Project...
 
 
+Structure of the **core** project:
+
+```
+
+ src
+    |-- com
+    |   -- libgdx
+    |       `-- playground
+    |           |-- PlaygroundMain.java
+    |           `-- screens
+    |               |-- AbstractGameScreen.java
+    |               |-- DirectedGame.java
+    |               |-- objects
+    |               |   |-- AbstractGameObject.java
+    |               |   |-- AbstractGameObjectWithPhysicsBody.java
+    |               |   `-- LibgdxLogo.java
+    |               |-- PlaygroundScreen.java
+    |               `-- transitions
+    |                   |-- ScreenTransitionFade.java
+    |                   |-- ScreenTransition.java
+    |                   |-- ScreenTransitionSlice.java
+    |                   `-- ScreenTransitionSlide.java
+
+```
+
+
+
 
