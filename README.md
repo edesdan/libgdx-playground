@@ -36,9 +36,9 @@ Structure of the **core** project:
 
 ```
 
-PlaygroundMain.java is the main class and it used as entry point for all projects (android,iOS,html,Desktop). 
-PlagroundScreen.java is the main screen and illustrate the use of the AbstractGameScreen class.
-LibgdxLogo.java illustrate the use of AbstractGameObject class. 
+**PlaygroundMain.java** is the main class and it used as entry point for all projects (android,iOS,html,Desktop). 
+**PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
+**LibgdxLogo.java** illustrate the use of **AbstractGameObject** class. 
 
 
 
