@@ -1,7 +1,8 @@
 # libgdx-playground
-A starting point for who wants to start learning libGDX or simply a start project for a new game.
+The project is intended to be a sort of template to start a new game with libGDX.
+It's also useful to all people that wants to start learning libgdx by doing some experiment. 
 The project has been created using [ gdx-setup.jar UI ] (https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle).
-You can download/clone the project and you are ready to import it into your IDE ([Eclipse, Intellij IDEA, NetBeans, Commandline](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)) and experiment with it!
+You can download/clone the project and you are ready to import it into your IDE ([Eclipse, Intellij IDEA, NetBeans, Commandline](https://github.com/libgdx/libgdx/wiki/Setting-up-your-Development-Environment-%28Eclipse%2C-Intellij-IDEA%2C-NetBeans%29)) :
 
  - To import in Eclipse: File -> Import -> Gradle -> Gradle Project
  - To import to Intellij IDEA: File -> Open -> build.gradle
