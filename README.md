@@ -1,6 +1,6 @@
 # libgdx-playground
 libgdx-playground allows you getting started with [ libGDX framework ] (https://github.com/libgdx/libgdx).
-It can be used also as template to start developing a game.
+It can be used also as **template** to start developing a game.
 
 The base project structure has been created with [ gdx-setup.jar UI ] (https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle).
 
