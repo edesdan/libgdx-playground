@@ -36,9 +36,20 @@ Structure of the **core** project:
 
 ```
 
-**PlaygroundMain.java** is the main class and it used as entry point for all projects (android,iOS,html,Desktop). 
+**PlaygroundMain.java** is the main class and it used as entry point for all projects (android,iOS,html,Desktop).
 **PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
 **LibgdxLogo.java** illustrate the use of **AbstractGameObject** class. 
 
+## What you get if you clone/fork this project
 
+Here are the list of feature, more will be added in the future:
 
+ - a set of Screens that you can use in your game
+ - 3 different kind of animation transitions between screens: *slice*, *fade*, *slide*
+ - a sample screen (PlaygroundScreen) that demonstrate the use of objects, screen and transitions.
+
+## Contribute
+
+If you want to request a specific feature you can open an issue, it will be evaluated and maybe implemented or you can submit a pull request.
+
+If you want to collaborate to this project just let me know.
