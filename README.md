@@ -40,7 +40,7 @@ Structure of the **core** project:
 **PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
 **LibgdxLogo.java** illustrate the use of **AbstractGameObject** class. 
 
-## What you get if you clone/fork this project
+## What's inside
 
 Here are the list of feature, more will be added in the future:
 
