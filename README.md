@@ -47,6 +47,7 @@ Here are the list of feature, more will be added in the future:
  - a set of Screens that you can use in your game
  - 3 different kind of animation transitions between screens: *slice*, *fade*, *slide*
  - a sample screen (PlaygroundScreen) that demonstrate the use of objects, screen and transitions.
+ - a pre-define Texture Packer that you can modify/extends in order to easily pack your image assets
 
 ## Contribute
 
