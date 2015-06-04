@@ -40,13 +40,14 @@ Structure of the **core** project:
 **PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
 **LibgdxLogo.java** illustrate the use of **AbstractGameObject** class. 
 
-## What you get if you clone/fork this project
+## What's inside
 
 Here are the list of feature, more will be added in the future:
 
  - a set of Screens that you can use in your game
  - 3 different kind of animation transitions between screens: *slice*, *fade*, *slide*
  - a sample screen (PlaygroundScreen) that demonstrate the use of objects, screen and transitions.
+ - a pre-define Texture Packer that you can modify/extends in order to easily pack your image assets
 
 ## Contribute
 
