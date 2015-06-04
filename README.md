@@ -44,6 +44,7 @@ Structure of the **core** project:
 **PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
 **WaitingScreen.java** is an example of a screen used to show a progress animation on the screen.
 **LibgdxLogo.java** illustrate the use of the **AbstractGameObject** class. 
+**Assets** is usefull to manage all assets (textures, sounds, music, skin files, ecc..): it handle loading, retrieving and disposing of your resources. 
 
 ## What's inside
 
@@ -53,6 +54,7 @@ Here are the list of feature, more will be added in the future:
  - 3 different kind of animation transitions between screens: *slice*, *fade*, *slide*
  - a sample screen (PlaygroundScreen) that demonstrate the use of objects, screen and transitions.
  - a pre-define Texture Packer that you can modify/extends in order to easily pack your image assets
+ - an asset manager (Assets) used to loads and stores assets like textures, bitmapfonts, tile maps, sounds, music and so on.
 
 ## Contribute
 
