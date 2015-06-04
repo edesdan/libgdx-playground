@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Disposable;
+import com.badlogic.gdx.utils.viewport.Viewport;
 
 public abstract class AbstractGameObject implements Disposable {
 
@@ -14,14 +15,17 @@ public abstract class AbstractGameObject implements Disposable {
 	protected float rotation;
 	protected float stateTime;
 	protected Animation animation;
+	private final Viewport viewport;
 
-	public AbstractGameObject() {
+	public AbstractGameObject(Viewport viewport) {
 		position = new Vector2();
 		dimension = new Vector2(1, 1);
 		origin = new Vector2();
 		scale = new Vector2(1, 1);
-
+		this.viewport = viewport;
 	}
+	
+
 
 	public void setAnimation(Animation animation) {
 		this.animation = animation;

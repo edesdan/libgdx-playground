@@ -15,6 +15,7 @@ public abstract class AbstractGameScreen extends InputAdapter implements Screen 
 	protected static Viewport viewport;
 	protected static Camera camera;
 
+	/*At the moment we are going to work with pixel dimensions*/
 	protected static final float TARGET_SCREEN_WIDTH = 1280.0f;
 	protected static final float TARGET_SCREEN_HEIGHT = 720.0f;
 	private static final float MAX_SCENE_WIDTH = 1920.0f;
@@ -28,6 +29,7 @@ public abstract class AbstractGameScreen extends InputAdapter implements Screen 
 		if (viewport == null) {
 			viewport = new ExtendViewport(TARGET_SCREEN_WIDTH, TARGET_SCREEN_HEIGHT, MAX_SCENE_WIDTH, MAX_SCENE_HEIGHT, camera);
 		}
+		viewport.apply();
 		Gdx.input.setCatchBackKey(false); // will be set to true only when the
 											// child override the InputAdapter
 											// class methods

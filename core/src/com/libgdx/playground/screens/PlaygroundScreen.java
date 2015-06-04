@@ -9,13 +9,13 @@ import com.libgdx.playground.screens.objects.LibgdxLogo;
 
 public class PlaygroundScreen extends AbstractGameScreen {
 
-	SpriteBatch batch;
-	LibgdxLogo libgdxLogo;
+	private SpriteBatch batch;
+	private LibgdxLogo libgdxLogo;
 
 	public PlaygroundScreen(DirectedGame game) {
 		super(game);
 		batch = new SpriteBatch();
-		libgdxLogo = new LibgdxLogo();
+		libgdxLogo = new LibgdxLogo(viewport);
 	}
 
 	@Override
@@ -25,17 +25,24 @@ public class PlaygroundScreen extends AbstractGameScreen {
 	};
 
 	private void setObjectPosition(AbstractGameObject object) {
-		
-		float x = viewport.getWorldWidth() * 0.5f;
-		float y = viewport.getWorldHeight() * 0.5f;
-		object.setPosition(x, y);	
+		float x = viewport.getScreenWidth() * 0.5f;
+		float y = viewport.getScreenHeight() * 0.5f;
+		object.setPosition(x, y);
 	}
 
 	@Override
 	public void render(float deltatime) {
 		Gdx.gl.glClearColor(1, 1, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		handleTouchInput();
 		libgdxLogo.render(batch);
+	}
+
+	private void handleTouchInput() {
+		if (Gdx.input.justTouched()) {
+			game.setScreen(new WaitingScreen(game));
+		}
+
 	}
 
 	@Override

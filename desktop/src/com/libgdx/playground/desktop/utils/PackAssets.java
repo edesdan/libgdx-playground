@@ -7,11 +7,11 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 public class PackAssets {
 	private static boolean drawDebugOutline = false;
 
-	private static final String filename = "game-ui-pack";
-	private static final String filenameMenuUi = "menu-ui-pack";
+	private static final String gamePackFilename = "game-pack";
+	private static final String menuPackFilename = "menu-pack";
 
-	private static final boolean PACK_MENU_UI = true;
-	private static final boolean PACK_GAME_UI = false;
+	private static final boolean PACK_MENU_UI = false;
+	private static final boolean PACK_GAME_UI = true;
 
 	// private static final String dirSeparator = "/";
 
@@ -31,11 +31,11 @@ public class PackAssets {
 		try {
 			if (PACK_GAME_UI) {
 				System.out.println("Packing game objects...");
-				TexturePacker.process(settings, "assets-raw/ui_game/", "../android/assets/data/images/", filename);
+				TexturePacker.process(settings, "assets-raw/ui_game/", "../android/assets/data/images/", gamePackFilename);
 			}
 			if (PACK_MENU_UI) {
 				System.out.println("Packing menu ui...");
-				TexturePacker.process(settings, "assets-raw/ui_menu/", "../android/assets/data/images/", filenameMenuUi);
+				TexturePacker.process(settings, "assets-raw/ui_menu/", "../android/assets/data/images/", menuPackFilename);
 			}
 
 		} catch (Exception e) {
