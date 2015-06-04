@@ -15,10 +15,11 @@ Structure of the **core** project:
 
 ```
 
- src
+`-- src
     |-- com
-    |   -- libgdx
+    |   `-- libgdx
     |       `-- playground
+    |           |-- Assets.java
     |           |-- PlaygroundMain.java
     |           `-- screens
     |               |-- AbstractGameScreen.java
@@ -26,19 +27,23 @@ Structure of the **core** project:
     |               |-- objects
     |               |   |-- AbstractGameObject.java
     |               |   |-- AbstractGameObjectWithPhysicsBody.java
-    |               |   `-- LibgdxLogo.java
+    |               |   |-- LibgdxLogo.java
+    |               |   `-- WaitingAnimation.java
     |               |-- PlaygroundScreen.java
-    |               `-- transitions
-    |                   |-- ScreenTransitionFade.java
-    |                   |-- ScreenTransition.java
-    |                   |-- ScreenTransitionSlice.java
-    |                   `-- ScreenTransitionSlide.java
+    |               |-- transitions
+    |               |   |-- ScreenTransitionFade.java
+    |               |   |-- ScreenTransition.java
+    |               |   |-- ScreenTransitionSlice.java
+    |               |   `-- ScreenTransitionSlide.java
+    |               `-- WaitingScreen.java
+
 
 ```
 
 **PlaygroundMain.java** is the main class and it used as entry point for all projects (android,iOS,html,Desktop).
 **PlagroundScreen.java** is the main screen and illustrate the use of the **AbstractGameScreen** class.
-**LibgdxLogo.java** illustrate the use of **AbstractGameObject** class. 
+**WaitingScreen.java** is an example of a screen used to show a progress animation on the screen.
+**LibgdxLogo.java** illustrate the use of the **AbstractGameObject** class. 
 
 ## What's inside
 
