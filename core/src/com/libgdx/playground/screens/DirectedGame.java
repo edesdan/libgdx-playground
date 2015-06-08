@@ -89,10 +89,12 @@ public abstract class DirectedGame extends Game {
 				nextFbo.begin();
 				nextScreen.render(deltaTime);
 				nextFbo.end();
-				// render transition effect to screen
-				float alpha = t / duration;
-
-				screenTransition.render(batch, currFbo.getColorBufferTexture(), nextFbo.getColorBufferTexture(), alpha);
+				
+				if (screenTransition != null) {
+					// render transition effect to screen
+					float alpha = t / duration;
+					screenTransition.render(batch, currFbo.getColorBufferTexture(), nextFbo.getColorBufferTexture(), alpha);
+				}
 			}
 		}
 	}
@@ -108,7 +110,7 @@ public abstract class DirectedGame extends Game {
 
 	@Override
 	public void pause() {
-		Gdx.app.debug(TAG, "pause() called on " + currScreen.getClass().getSimpleName());
+		Gdx.app.debug(TAG, "pause() called on screen");
 
 		if (currScreen != null)
 			currScreen.pause();
@@ -117,7 +119,7 @@ public abstract class DirectedGame extends Game {
 	@Override
 	public void resume() {
 
-		Gdx.app.debug(TAG, "resume() called on " + currScreen.getClass().getSimpleName());
+		Gdx.app.debug(TAG, "resume() called on screen");
 
 		if (currScreen != null)
 			currScreen.resume();
@@ -129,7 +131,7 @@ public abstract class DirectedGame extends Game {
 	 */
 	@Override
 	public void dispose() {
-		Gdx.app.debug(TAG, "dispose() called on " + currScreen.getClass().getSimpleName());
+		Gdx.app.debug(TAG, "dispose() called on screen");
 
 		if (currScreen != null) {
 			currScreen.hide();
