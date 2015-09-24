@@ -14,7 +14,10 @@ public class PlaygroundMain extends DirectedGame {
 		Gdx.app.setLogLevel(Application.LOG_DEBUG);
 
 		// Load all assets
+		Assets.instance.loadAllAssetsSync();
+		//Init Assets
 		Assets.instance.init();
+		
 		// Start game with Playground Screen
 		ScreenTransition transition = ScreenTransitionFade.init(3.0f);
 		setScreen(new PlaygroundScreen(this), transition);
